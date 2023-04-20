@@ -34,6 +34,8 @@ class RegistrationViewController : UIViewController {
         setupLayouts()
     }
     
+    
+    
     func setupLayouts () {
         configureSeparator()
         
@@ -63,6 +65,8 @@ class RegistrationViewController : UIViewController {
         
         configureBillButton()
     }
+    
+    
     
     @objc func performBillVC (param: UIButton) {
             let billVC = BillViewController()
