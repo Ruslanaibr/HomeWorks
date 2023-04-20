@@ -66,9 +66,22 @@ class RegistrationViewController : UIViewController {
         configureBillButton()
     }
     
+    @objc func billButtonPressed () {
+        alertBill()
+    }
     
+    func alertBill () {
+        let alert = UIAlertController(title: "Issue an invoice?", message: nil, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default))
+        alert.addAction(UIAlertAction(title: "Bill", style: .default, handler: { action in
+            self.performBillVC()
+        }))
+        
+        present(alert, animated: true)
+    }
     
-    @objc func performBillVC (param: UIButton) {
+    func performBillVC () {
             let billVC = BillViewController()
             self.navigationController?.pushViewController(billVC, animated: true)
     }
@@ -149,7 +162,7 @@ class RegistrationViewController : UIViewController {
             billButton.widthAnchor.constraint(equalToConstant: 400)
         ])
         
-        billButton.addTarget(self, action: #selector(performBillVC(param:)), for: .touchUpInside)
+        billButton.addTarget(self, action: #selector(billButtonPressed), for: .touchUpInside)
         
     }
     
