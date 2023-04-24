@@ -16,6 +16,7 @@
 		974DF5C029F67A8500752FCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974DF5BF29F67A8500752FCA /* Constants.swift */; };
 		974DF5C329F6814B00752FCA /* OtVinta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974DF5C129F6814B00752FCA /* OtVinta.mp3 */; };
 		974DF5C429F6814B00752FCA /* BlackCoffee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974DF5C229F6814B00752FCA /* BlackCoffee.mp3 */; };
+		974DF5C629F6B41800752FCA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974DF5C529F6B41800752FCA /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		974DF5BF29F67A8500752FCA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		974DF5C129F6814B00752FCA /* OtVinta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OtVinta.mp3; sourceTree = "<group>"; };
 		974DF5C229F6814B00752FCA /* BlackCoffee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BlackCoffee.mp3; sourceTree = "<group>"; };
+		974DF5C529F6B41800752FCA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				9729336429F1398500D75589 /* AppDelegate.swift */,
 				9729336629F1398500D75589 /* SceneDelegate.swift */,
 				9729336829F1398500D75589 /* ViewController.swift */,
+				974DF5C529F6B41800752FCA /* PlayerViewController.swift */,
 				974DF5BF29F67A8500752FCA /* Constants.swift */,
 				9729336A29F1398500D75589 /* Main.storyboard */,
 				974DF5C229F6814B00752FCA /* BlackCoffee.mp3 */,
@@ -153,6 +156,7 @@
 				9729336529F1398500D75589 /* AppDelegate.swift in Sources */,
 				9729336729F1398500D75589 /* SceneDelegate.swift in Sources */,
 				974DF5C029F67A8500752FCA /* Constants.swift in Sources */,
+				974DF5C629F6B41800752FCA /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
