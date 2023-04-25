@@ -41,11 +41,20 @@ final class ViewController: UIViewController {
     //Smeshariki button pressed
     
     @objc private func button1Pressed () {
-        navigationController?.pushViewController(PlayerViewController(), animated: true)
+        let destinationVC = PlayerViewController()
+        destinationVC.songName = "Smeshariki - Ot Vinta!.mp3"
+        destinationVC.songUrl = song1.url
+        destinationVC.songImgName = "smeshariki"
+        navigationController?.pushViewController(destinationVC, animated: true)
+        
     }
     
     @objc private func button2Pressed () {
-        navigationController?.pushViewController(PlayerViewController(), animated: true)
+        let destinationVC = PlayerViewController()
+        destinationVC.songName = "Mo Rodgers - Black Coffee.mp3"
+        destinationVC.songUrl = song2.url
+        destinationVC.songImgName = "blackCoffee"
+        navigationController?.pushViewController(destinationVC, animated: true)
     }
     
     // 1 Song
@@ -79,7 +88,7 @@ final class ViewController: UIViewController {
         title = "PlayList"
         
         let appearance                                           = UINavigationBarAppearance()
-        appearance.backgroundColor                               = Const.Color.green
+        appearance.backgroundColor                               = Const.Color.dark
         appearance.titleTextAttributes                           = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes                      = [.foregroundColor: UIColor.white]
 
