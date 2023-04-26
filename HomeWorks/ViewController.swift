@@ -45,7 +45,8 @@ final class ViewController: UIViewController {
         destinationVC.songName = "Smeshariki - Ot Vinta!.mp3"
         destinationVC.songUrl = song1.url
         destinationVC.songImgName = "smeshariki"
-        navigationController?.pushViewController(destinationVC, animated: true)
+//        navigationController?.pushViewController(destinationVC, animated: true)
+        present(destinationVC, animated: true)
         
     }
     
@@ -54,7 +55,8 @@ final class ViewController: UIViewController {
         destinationVC.songName = "Mo Rodgers - Black Coffee.mp3"
         destinationVC.songUrl = song2.url
         destinationVC.songImgName = "blackCoffee"
-        navigationController?.pushViewController(destinationVC, animated: true)
+//        navigationController?.pushViewController(destinationVC, animated: true)
+        present(destinationVC, animated: true)
     }
     
     // 1 Song
