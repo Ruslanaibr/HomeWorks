@@ -18,7 +18,6 @@ class ProductViewController: UIViewController {
     private let labelContr   = UILabel()
     private let currentFee   = UILabel()
     private let goButton     = UIButton()
-    
     private let imageCar     = UIImageView()
     
     override func viewDidLoad() {
@@ -36,10 +35,10 @@ class ProductViewController: UIViewController {
         configureSlider()
         configureLabelFee()
         configureGoButton()
-        
-        
     }
     
+    
+    //Смена картинки товара по нажатию на сегментКонтрол
     @objc private func segmentChanged (param: UISegmentedControl) {
         if let car = product {
             switch param.selectedSegmentIndex {
@@ -48,13 +47,14 @@ class ProductViewController: UIViewController {
             default: break
             }
         }
-        
     }
     
+    //Отображение выбранного числа на слайдере
     @objc private func sliderChanged (param: UISlider) {
         currentFee.text = "Your initial fee is \(Int(param.value))?"
     }
     
+    // Переход к четвертому контроллеру по нажатию на кнопку, передача выбранного на слайдере значения
     @objc private func applyPressed () {
         let alert = UIAlertController(title: "You need to fill out an application form", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Got it!", style: .default, handler: { action in
@@ -65,10 +65,12 @@ class ProductViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    
+    //Настройка view
     private func congigureView () {
         view.backgroundColor = K.Color.lightGray
     }
+    
+    //Настройка главной картинки
     
     private func configureImage () {
         view.addSubview(imageCar)
@@ -84,9 +86,9 @@ class ProductViewController: UIViewController {
                 imageCar.heightAnchor.constraint(equalToConstant: 250)
             ])
         }
-        
     }
     
+    //Настройка разделителя
     private func configureSeparator () {
         view.addSubview(separator)
         
@@ -96,9 +98,9 @@ class ProductViewController: UIViewController {
             separator.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             separator.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
         ])
-        
     }
     
+    // Настройка сегментКонтрола
     private func configureSegmentColor () {
         
         segmentColor = UISegmentedControl(items: menuArray)
@@ -115,6 +117,7 @@ class ProductViewController: UIViewController {
         segmentColor.addTarget(self, action: #selector(segmentChanged(param:)), for: .valueChanged)
     }
     
+    //Настройка лейбла с ценой товара
     private func configureLabelPrice () {
         view.addSubview(labelPrice)
         if let car = product {
@@ -131,6 +134,7 @@ class ProductViewController: UIViewController {
         }
     }
     
+    //Настройка лейбла
     private func configureLabelContr() {
         view.addSubview(labelContr)
         
@@ -143,8 +147,9 @@ class ProductViewController: UIViewController {
             labelContr.topAnchor.constraint(equalTo: labelPrice.bottomAnchor, constant: 30),
             labelContr.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
         ])
-        
     }
+    
+    //Настройка слайдера
     private func  configureSlider () {
         view.addSubview(slider)
         
@@ -166,9 +171,10 @@ class ProductViewController: UIViewController {
             ])
             slider.addTarget(self, action: #selector(sliderChanged(param:)), for: .valueChanged)
         }
-        
     }
     
+    
+    // Настройка лейбла, который отражает выбранное значение слайдера
     private func configureLabelFee () {
         view.addSubview(currentFee)
         
@@ -184,6 +190,7 @@ class ProductViewController: UIViewController {
         ])
     }
     
+    //Настройка кнопки 
     private func configureGoButton () {
         view.addSubview(goButton)
         

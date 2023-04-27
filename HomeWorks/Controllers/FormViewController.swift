@@ -9,19 +9,19 @@ import UIKit
 
 class FormViewController: UIViewController {
     
-    private let separator = UIImageView(image: UIImage(named: "separator"))
-    private let labelName = UILabel()
-    private let txtName = UITextField()
-    private let labelSurname = UILabel()
-    private let txtSurname = UITextField()
     var fee : Float?
-    private let labelFee = UILabel()
-    private let txtFee = UITextField()
-    private let txtCredit = UITextField()
-    private let labelCredit = UILabel()
-    private let picker = UIPickerView()
-    private let arrayPicker = ["Сredit", "Cash"]
-    private let goButton = UIButton()
+    private let separator    = UIImageView(image: UIImage(named: "separator"))
+    private let labelName    = UILabel()
+    private let txtName      = UITextField()
+    private let labelSurname = UILabel()
+    private let txtSurname   = UITextField()
+    private let labelFee     = UILabel()
+    private let txtFee       = UITextField()
+    private let txtCredit    = UITextField()
+    private let labelCredit  = UILabel()
+    private let picker       = UIPickerView()
+    private let arrayPicker  = ["Сredit", "Cash"]
+    private let goButton     = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +46,12 @@ class FormViewController: UIViewController {
         configureGoButton()
     }
     
+    //По нажатию на кнопку вызывается алерт
     @objc func applyPressed () {
         alertApply()
     }
     
+    //Благодарственный алерт, переход к предыдущему контроллеру
     private func alertApply () {
         let alert = UIAlertController(title: K.TextForm.alert, message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Thanks", style: .default, handler: { action in
@@ -57,15 +59,19 @@ class FormViewController: UIViewController {
         }))
         present(alert, animated: true)
     }
+    
+    //Насйтройка пикера
     private func configurePicker () {
         picker.delegate = self
         picker.dataSource = self
     }
     
+    //Настройка view
     private func congigureView () {
         view.backgroundColor = K.Color.lightBlue
     }
     
+    //Настройка лейблов
     private func configureLabels (label : UILabel, title : String, size : Int, under layout: UIView, leading: Int) {
         view.addSubview(label)
         
@@ -77,6 +83,7 @@ class FormViewController: UIViewController {
         addConstraintsLabels(label: label, under: layout, leading: leading)
     }
     
+    //Добавление констрейтов для лейблов
     private func addConstraintsLabels (label: UILabel, under layout: UIView, leading: Int) {
             label.translatesAutoresizingMaskIntoConstraints = false
             
@@ -86,6 +93,7 @@ class FormViewController: UIViewController {
             ])
         }
     
+    //Настройка текстфилдов
     private func configureTxtFields (field: UITextField, placeholder: String, under layout: UIView, inputView: UIView?) {
             view.addSubview(field)
             
@@ -99,6 +107,7 @@ class FormViewController: UIViewController {
             addConstraintsTF(field: field, under: layout)
         }
     
+    //Констрейты для текстфилдов
     private func addConstraintsTF (field: UITextField, under layout: UIView) {
             field.translatesAutoresizingMaskIntoConstraints = false
             
@@ -109,6 +118,7 @@ class FormViewController: UIViewController {
             ])
         }
     
+    //Настройка разделителя
     private func configureSeparator () {
         view.addSubview(separator)
         
@@ -120,25 +130,9 @@ class FormViewController: UIViewController {
            separator.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
     }
-
     
-}
-
-extension FormViewController : UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        2
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return arrayPicker[row]
-    }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        txtCredit.text = arrayPicker[row]
-    }
-    
+    //Настройка кнопки
     private func configureGoButton () {
         view.addSubview(goButton)
         
@@ -157,6 +151,22 @@ extension FormViewController : UIPickerViewDelegate, UIPickerViewDataSource {
         
         goButton.addTarget(self, action: #selector(applyPressed), for: .touchUpInside)
     }
+}
+
+
+//Методы UIPickerViewDelegate, UIPickerViewDataSource
+extension FormViewController : UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
     
-    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        2
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return arrayPicker[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        txtCredit.text = arrayPicker[row]
+    }
 }

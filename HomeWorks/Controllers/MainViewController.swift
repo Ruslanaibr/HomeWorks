@@ -27,14 +27,19 @@ class MainViewController: UIViewController {
         configureGoButton()
     }
     
+    //Переход на ListViewController по нажатию кнопки
     @objc private func goPressed() {
         navigationController?.pushViewController(ListViewController(), animated: true)
     }
     
+    
+    //Настройка view
     private func congigureView () {
         view.backgroundColor = K.Color.lightBlue
     }
     
+    
+    //Настройка Welcome label
     private func congigureWelcomeLabel () {
         view.addSubview(labelWelcome)
         labelWelcome.text = K.TextMain.welcome
@@ -49,6 +54,7 @@ class MainViewController: UIViewController {
         ])
     }
     
+    //Настройка картинки лого
     private func congigureImageLogo () {
         view.addSubview(imageLogo)
         imageLogo.image = UIImage(named: "logo")
@@ -63,6 +69,7 @@ class MainViewController: UIViewController {
         ])
     }
     
+    //Настройка лейбла про нас
     private func congigurelabelAboutUs () {
         view.addSubview(labelAboutUs)
         labelAboutUs.text = K.TextMain.aboutUs
@@ -80,6 +87,7 @@ class MainViewController: UIViewController {
         ])
     }
     
+    //Настройка кнопки 
     private func configureGoButton () {
         view.addSubview(goButton)
         goButton.setTitle("Go to shopping", for: .normal)

@@ -22,6 +22,7 @@ class ListViewController: UIViewController {
     private let imageProduct6 = UIImageView()
     private let labelProduct6 = UILabel()
     private let labelDream    = UILabel()
+    
     private let product1 = Product(white: "audi6White", black: "audi6Black", price: "2359999")
     private let product2 = Product(white: "mercWhite", black: "mercBlack", price: "12980000")
     private let product3 = Product(white: "bmw6White", black: "bmw6Black", price: "7655000")
@@ -40,10 +41,12 @@ class ListViewController: UIViewController {
         configureLabelDream()
     }
     
+    //Возвращение на прошлый экран по нажатию левой кнокпи на баре
     @objc private func backPressed () {
         navigationController?.popViewController(animated: true)
     }
     
+    // Передача характеристик товара третьему контроллеру по нажатию на картинку товара
     @objc func imgPressed (sender: UITapGestureRecognizer) {
         let destinationVC = ProductViewController()
         if let tag = sender.view?.tag {
@@ -60,6 +63,7 @@ class ListViewController: UIViewController {
         present(destinationVC, animated: true)
     }
     
+    //Настройка view
     private func configureView () {
         view.backgroundColor = K.Color.lightBlue
         //Change leftBarButton
@@ -69,7 +73,7 @@ class ListViewController: UIViewController {
         title = "Cars in stock"
         
         
-        //Change NavigationBar color
+        //Изменение цвета Navigation Bar
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .white
         navigationController?.navigationBar.tintColor = K.Color.gray
@@ -78,7 +82,7 @@ class ListViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         }
     
-    //Configure Main Stack
+    //Настройка главного вертикального стека
     private func configureMainStack () {
         let hStack1 = configureHstack1()
         let hStack2 = configureHstack2()
@@ -97,7 +101,7 @@ class ListViewController: UIViewController {
         addConstraintsTo(stack: vStack)
     }
     
-    //Constraints to Vertical Stack
+    //Constraints для вертиклаьного стека
     private func addConstraintsTo (stack: UIStackView) {
         view.addSubview(stack)
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -110,6 +114,7 @@ class ListViewController: UIViewController {
         ])
     }
     
+    // Настройка горизонтального стека - первого ряда
     private func configureHstack1 () -> UIStackView {
         
         let vStack1 = configureVStackCell(image: imageProduct1, label: labelProduct1, imgName: product1.black, txtLabel: "Audi A6", tag: 1)
@@ -127,7 +132,7 @@ class ListViewController: UIViewController {
         hStack.distribution = .equalSpacing
         return hStack
     }
-    
+    // Настройка горизонтального стека - второго ряда
     private func configureHstack2 () -> UIStackView {
         let vStack1 = configureVStackCell(image: imageProduct4, label: labelProduct4, imgName: product4.black, txtLabel: "Bentley", tag: 4)
         let vStack2 = configureVStackCell(image: imageProduct5, label: labelProduct5, imgName: product5.black, txtLabel: "Mazda", tag: 5)
@@ -144,6 +149,8 @@ class ListViewController: UIViewController {
         hStack.distribution = .equalSpacing
         return hStack
     }
+    
+    // Настройка вертикальных стеков, состоящих из картинки и лейбла
     private func configureVStackCell (image: UIImageView, label: UILabel, imgName: String, txtLabel : String, tag : Int)  -> UIStackView{
         
         let array = [image,label]
@@ -169,6 +176,7 @@ class ListViewController: UIViewController {
         return vStack
     }
     
+    //Настройка лейбла
     private func configureLabelDream () {
         view.addSubview(labelDream)
         

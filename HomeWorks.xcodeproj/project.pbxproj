@@ -69,10 +69,7 @@
 				976D2C9629F96D5B00863864 /* fonts */,
 				9729336429F1398500D75589 /* AppDelegate.swift */,
 				9729336629F1398500D75589 /* SceneDelegate.swift */,
-				9729336829F1398500D75589 /* MainViewController.swift */,
-				976D2C9929F97A0B00863864 /* ListViewController.swift */,
-				976D2C9B29F9999E00863864 /* ProductViewController.swift */,
-				976D2C9F29F9B69100863864 /* FormViewController.swift */,
+				976D2CA229FA74BD00863864 /* Controllers */,
 				976D2C9D29F99C0200863864 /* Product.swift */,
 				976D2C9329F96BA700863864 /* Constants.swift */,
 				9729336D29F1398700D75589 /* Assets.xcassets */,
@@ -88,6 +85,17 @@
 				976D2C9729F96D8F00863864 /* Orbitron.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		976D2CA229FA74BD00863864 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9729336829F1398500D75589 /* MainViewController.swift */,
+				976D2C9929F97A0B00863864 /* ListViewController.swift */,
+				976D2C9B29F9999E00863864 /* ProductViewController.swift */,
+				976D2C9F29F9B69100863864 /* FormViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
