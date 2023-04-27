@@ -19,6 +19,8 @@ class ProductViewController: UIViewController {
     private let currentFee   = UILabel()
     private let goButton     = UIButton()
     private let imageCar     = UIImageView()
+    private var activityVC   : UIActivityViewController?
+    private let buttonShare  = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +37,16 @@ class ProductViewController: UIViewController {
         configureSlider()
         configureLabelFee()
         configureGoButton()
+        configureShareButton()
     }
     
+    //Нажатие кнопки поделиться
+    
+    @objc private func sharePressed () {
+        let text = "Hey! Looking for cars! The price is \(self.product?.price ?? "nil")"
+        activityVC = UIActivityViewController(activityItems: [self, text], applicationActivities: nil)
+        present(activityVC!, animated: true)
+    }
     
     //Смена картинки товара по нажатию на сегментКонтрол
     @objc private func segmentChanged (param: UISegmentedControl) {
@@ -209,5 +219,40 @@ class ProductViewController: UIViewController {
         
         goButton.addTarget(self, action: #selector(applyPressed), for: .touchUpInside)
     }
+    
+    
+    private func configureShareButton () {
+        
+        let image = UIImageView(image: UIImage(systemName: "square.and.arrow.up"))
+        buttonShare.addSubview(image)
+        buttonShare.tintColor = K.Color.gray
+        buttonShare.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(buttonShare)
+        
+        NSLayoutConstraint.activate([
+            buttonShare.topAnchor.constraint(equalTo: segmentColor.bottomAnchor, constant: 40),
+            buttonShare.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25)
+        ])
+        
+        buttonShare.addTarget(self, action: #selector(sharePressed), for: .touchUpInside)
+    }
+}
+
+extension ProductViewController : UIActivityItemSource {
+    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+        return (product?.price ?? "nil")
+    }
+    
+    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+        if activityType == UIActivity.ActivityType.mail {
+            return "I send you the price of the selected car by e-mail \(product?.price ?? "nil")"
+        } else if activityType == UIActivity.ActivityType.message {
+            return "Check this out \(product?.price ?? "nil")"
+        } else {
+            return "\(product?.price ?? "nil")"
+        }
+    }
+    
+    
     
 }
