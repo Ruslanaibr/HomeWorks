@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		9729336529F1398500D75589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336429F1398500D75589 /* AppDelegate.swift */; };
 		9729336729F1398500D75589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336629F1398500D75589 /* SceneDelegate.swift */; };
-		9729336929F1398500D75589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336829F1398500D75589 /* ViewController.swift */; };
-		9729336C29F1398500D75589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9729336A29F1398500D75589 /* Main.storyboard */; };
+		9729336929F1398500D75589 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336829F1398500D75589 /* LogViewController.swift */; };
 		9729336E29F1398700D75589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9729336D29F1398700D75589 /* Assets.xcassets */; };
 		9729337129F1398700D75589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9729336F29F1398700D75589 /* LaunchScreen.storyboard */; };
+		976D2CAB29FACD2700863864 /* GreatVibes-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 976D2CAA29FACD2700863864 /* GreatVibes-Regular.ttf */; };
+		976D2CAD29FAD10C00863864 /* FoodCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976D2CAC29FAD10C00863864 /* FoodCategoriesViewController.swift */; };
+		976D2CAF29FAD27500863864 /* InstrumentSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 976D2CAE29FAD27500863864 /* InstrumentSerif-Italic.ttf */; };
+		976D2CB129FAD5D500863864 /* PizzaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976D2CB029FAD5D500863864 /* PizzaListViewController.swift */; };
+		976D2CB429FE3F6100863864 /* ChooseComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976D2CB329FE3F6100863864 /* ChooseComponentsViewController.swift */; };
+		976D2CB629FE53C500863864 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976D2CB529FE53C500863864 /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9729336129F1398500D75589 /* HomeWorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9729336429F1398500D75589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9729336629F1398500D75589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9729336829F1398500D75589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9729336B29F1398500D75589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9729336829F1398500D75589 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		9729336D29F1398700D75589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9729337029F1398700D75589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9729337229F1398700D75589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976D2CAA29FACD2700863864 /* GreatVibes-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.ttf"; sourceTree = "<group>"; };
+		976D2CAC29FAD10C00863864 /* FoodCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoriesViewController.swift; sourceTree = "<group>"; };
+		976D2CAE29FAD27500863864 /* InstrumentSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstrumentSerif-Italic.ttf"; sourceTree = "<group>"; };
+		976D2CB029FAD5D500863864 /* PizzaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListViewController.swift; sourceTree = "<group>"; };
+		976D2CB329FE3F6100863864 /* ChooseComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseComponentsViewController.swift; sourceTree = "<group>"; };
+		976D2CB529FE53C500863864 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,34 @@
 			children = (
 				9729336429F1398500D75589 /* AppDelegate.swift */,
 				9729336629F1398500D75589 /* SceneDelegate.swift */,
-				9729336829F1398500D75589 /* ViewController.swift */,
-				9729336A29F1398500D75589 /* Main.storyboard */,
+				976D2CB729FF8BF900863864 /* Controllers */,
 				9729336D29F1398700D75589 /* Assets.xcassets */,
+				976D2CB229FE37BF00863864 /* fonts */,
 				9729336F29F1398700D75589 /* LaunchScreen.storyboard */,
 				9729337229F1398700D75589 /* Info.plist */,
 			);
 			path = HomeWorks;
+			sourceTree = "<group>";
+		};
+		976D2CB229FE37BF00863864 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				976D2CAE29FAD27500863864 /* InstrumentSerif-Italic.ttf */,
+				976D2CAA29FACD2700863864 /* GreatVibes-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		976D2CB729FF8BF900863864 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9729336829F1398500D75589 /* LogViewController.swift */,
+				976D2CAC29FAD10C00863864 /* FoodCategoriesViewController.swift */,
+				976D2CB029FAD5D500863864 /* PizzaListViewController.swift */,
+				976D2CB329FE3F6100863864 /* ChooseComponentsViewController.swift */,
+				976D2CB529FE53C500863864 /* PaymentViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +158,8 @@
 			files = (
 				9729337129F1398700D75589 /* LaunchScreen.storyboard in Resources */,
 				9729336E29F1398700D75589 /* Assets.xcassets in Resources */,
-				9729336C29F1398500D75589 /* Main.storyboard in Resources */,
+				976D2CAB29FACD2700863864 /* GreatVibes-Regular.ttf in Resources */,
+				976D2CAF29FAD27500863864 /* InstrumentSerif-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9729336929F1398500D75589 /* ViewController.swift in Sources */,
+				976D2CB629FE53C500863864 /* PaymentViewController.swift in Sources */,
+				9729336929F1398500D75589 /* LogViewController.swift in Sources */,
 				9729336529F1398500D75589 /* AppDelegate.swift in Sources */,
+				976D2CAD29FAD10C00863864 /* FoodCategoriesViewController.swift in Sources */,
+				976D2CB429FE3F6100863864 /* ChooseComponentsViewController.swift in Sources */,
 				9729336729F1398500D75589 /* SceneDelegate.swift in Sources */,
+				976D2CB129FAD5D500863864 /* PizzaListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9729336A29F1398500D75589 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9729336B29F1398500D75589 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9729336F29F1398700D75589 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +320,6 @@
 				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +347,6 @@
 				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
