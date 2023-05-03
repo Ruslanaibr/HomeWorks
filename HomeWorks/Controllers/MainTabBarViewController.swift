@@ -20,10 +20,6 @@ final class MainTabBarViewController: UITabBarController {
     }
     
     private func addNavigationVCtoTabVC () {
-        let worldClockViewController = WorldClockViewController()
-        let alarmViewController      = AlarmViewController()
-        let stopwatchViewConroller   = StopwatchViewController()
-        let timerViewController      = TimerViewController()
         
         let weightCongig    = UIImage.SymbolConfiguration(weight: .medium)
         let worldClockImage = UIImage(systemName: "globe", withConfiguration: weightCongig)!
@@ -32,7 +28,7 @@ final class MainTabBarViewController: UITabBarController {
         let timerImage      = UIImage(systemName: "timer", withConfiguration: weightCongig)!
         
         viewControllers = [
-            generateViewController(rootViewController: worldClockViewController, title: "World Clock", image: worldClockImage),
+            generateViewController(rootViewController: WorldClockViewController(), title: "World Clock", image: worldClockImage),
             generateViewController(rootViewController: AlarmViewController(), title: "Alarm", image: alarmImage),
             generateViewController(rootViewController: StopwatchViewController(), title: "Stopwatch", image: stopWatchImage),
             generateViewController(rootViewController: TimerViewController(), title: "Timer", image: timerImage)]
