@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		9729336529F1398500D75589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336429F1398500D75589 /* AppDelegate.swift */; };
 		9729336729F1398500D75589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336629F1398500D75589 /* SceneDelegate.swift */; };
-		9729336929F1398500D75589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336829F1398500D75589 /* ViewController.swift */; };
-		9729336C29F1398500D75589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9729336A29F1398500D75589 /* Main.storyboard */; };
 		9729336E29F1398700D75589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9729336D29F1398700D75589 /* Assets.xcassets */; };
 		9729337129F1398700D75589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9729336F29F1398700D75589 /* LaunchScreen.storyboard */; };
+		97F1F81E29FFFFE80081BE7E /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F81D29FFFFE80081BE7E /* WorldClockViewController.swift */; };
+		97F1F82029FFFFFD0081BE7E /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F81F29FFFFFD0081BE7E /* AlarmViewController.swift */; };
+		97F1F8222A00001E0081BE7E /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8212A00001E0081BE7E /* StopwatchViewController.swift */; };
+		97F1F8242A00002D0081BE7E /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8232A00002D0081BE7E /* TimerViewController.swift */; };
+		97F1F8272A0004760081BE7E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8262A0004760081BE7E /* MainTabBarViewController.swift */; };
+		97F1F8292A002C720081BE7E /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8282A002C720081BE7E /* CustomLabel.swift */; };
+		97F1F82B2A0031510081BE7E /* TextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F82A2A0031510081BE7E /* TextProvider.swift */; };
+		97F1F82F2A00ED990081BE7E /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F82E2A00ED990081BE7E /* CustomImage.swift */; };
+		97F1F8332A024D710081BE7E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8322A024D710081BE7E /* CustomButton.swift */; };
+		97F1F8352A02528B0081BE7E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8342A02528B0081BE7E /* Colors.swift */; };
+		97F1F8382A02B66F0081BE7E /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8372A02B66F0081BE7E /* Views.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9729336129F1398500D75589 /* HomeWorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9729336429F1398500D75589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9729336629F1398500D75589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9729336829F1398500D75589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9729336B29F1398500D75589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9729336D29F1398700D75589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9729337029F1398700D75589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9729337229F1398700D75589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F1F81D29FFFFE80081BE7E /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		97F1F81F29FFFFFD0081BE7E /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		97F1F8212A00001E0081BE7E /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		97F1F8232A00002D0081BE7E /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		97F1F8262A0004760081BE7E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		97F1F8282A002C720081BE7E /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		97F1F82A2A0031510081BE7E /* TextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProvider.swift; sourceTree = "<group>"; };
+		97F1F82E2A00ED990081BE7E /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		97F1F8322A024D710081BE7E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		97F1F8342A02528B0081BE7E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		97F1F8372A02B66F0081BE7E /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,54 @@
 			children = (
 				9729336429F1398500D75589 /* AppDelegate.swift */,
 				9729336629F1398500D75589 /* SceneDelegate.swift */,
-				9729336829F1398500D75589 /* ViewController.swift */,
-				9729336A29F1398500D75589 /* Main.storyboard */,
+				97F1F82D2A003E400081BE7E /* Resources */,
+				97F1F82C2A003E280081BE7E /* CustomViews */,
+				97F1F8252A0000430081BE7E /* Controllers */,
 				9729336D29F1398700D75589 /* Assets.xcassets */,
 				9729336F29F1398700D75589 /* LaunchScreen.storyboard */,
 				9729337229F1398700D75589 /* Info.plist */,
 			);
 			path = HomeWorks;
+			sourceTree = "<group>";
+		};
+		97F1F8252A0000430081BE7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8262A0004760081BE7E /* MainTabBarViewController.swift */,
+				97F1F81D29FFFFE80081BE7E /* WorldClockViewController.swift */,
+				97F1F81F29FFFFFD0081BE7E /* AlarmViewController.swift */,
+				97F1F8212A00001E0081BE7E /* StopwatchViewController.swift */,
+				97F1F8232A00002D0081BE7E /* TimerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97F1F82C2A003E280081BE7E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8282A002C720081BE7E /* CustomLabel.swift */,
+				97F1F82E2A00ED990081BE7E /* CustomImage.swift */,
+				97F1F8322A024D710081BE7E /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		97F1F82D2A003E400081BE7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F82A2A0031510081BE7E /* TextProvider.swift */,
+				97F1F8362A02B65B0081BE7E /* Extensions */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97F1F8362A02B65B0081BE7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8342A02528B0081BE7E /* Colors.swift */,
+				97F1F8372A02B66F0081BE7E /* Views.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +186,6 @@
 			files = (
 				9729337129F1398700D75589 /* LaunchScreen.storyboard in Resources */,
 				9729336E29F1398700D75589 /* Assets.xcassets in Resources */,
-				9729336C29F1398500D75589 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +196,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9729336929F1398500D75589 /* ViewController.swift in Sources */,
+				97F1F8222A00001E0081BE7E /* StopwatchViewController.swift in Sources */,
+				97F1F8352A02528B0081BE7E /* Colors.swift in Sources */,
+				97F1F82029FFFFFD0081BE7E /* AlarmViewController.swift in Sources */,
+				97F1F81E29FFFFE80081BE7E /* WorldClockViewController.swift in Sources */,
+				97F1F8272A0004760081BE7E /* MainTabBarViewController.swift in Sources */,
+				97F1F82B2A0031510081BE7E /* TextProvider.swift in Sources */,
+				97F1F8382A02B66F0081BE7E /* Views.swift in Sources */,
+				97F1F82F2A00ED990081BE7E /* CustomImage.swift in Sources */,
+				97F1F8242A00002D0081BE7E /* TimerViewController.swift in Sources */,
+				97F1F8332A024D710081BE7E /* CustomButton.swift in Sources */,
 				9729336529F1398500D75589 /* AppDelegate.swift in Sources */,
 				9729336729F1398500D75589 /* SceneDelegate.swift in Sources */,
+				97F1F8292A002C720081BE7E /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9729336A29F1398500D75589 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9729336B29F1398500D75589 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9729336F29F1398700D75589 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +352,6 @@
 				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +379,6 @@
 				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
