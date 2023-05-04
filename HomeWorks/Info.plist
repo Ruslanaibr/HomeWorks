@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Genos-Italic-VariableFont_wght.ttf</string>
+		<string>DancingScript-VariableFont_wght.ttf</string>
+		<string>Caveat-VariableFont_wght.ttf</string>
+		<string>BrunoAceSC-Regular.ttf</string>
+		<string>GreatVibes-Regular.ttf</string>
+		<string>Sacramento-Regular.ttf</string>
+		<string>Zeyada-Regular.ttf</string>
+		<string>Gruppo-Regular.ttf</string>
+		<string>GreatVibes-Regular.ttf</string>
+		<string>BrunoAceSC-Regular.ttf</string>
+		<string>CastoroTitling-Regular.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -15,8 +29,6 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>

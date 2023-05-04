@@ -9,21 +9,51 @@
 /* Begin PBXBuildFile section */
 		9729336529F1398500D75589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336429F1398500D75589 /* AppDelegate.swift */; };
 		9729336729F1398500D75589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336629F1398500D75589 /* SceneDelegate.swift */; };
-		9729336929F1398500D75589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729336829F1398500D75589 /* ViewController.swift */; };
-		9729336C29F1398500D75589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9729336A29F1398500D75589 /* Main.storyboard */; };
 		9729336E29F1398700D75589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9729336D29F1398700D75589 /* Assets.xcassets */; };
 		9729337129F1398700D75589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9729336F29F1398700D75589 /* LaunchScreen.storyboard */; };
+		97F1F83A2A0381F30081BE7E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8392A0381F30081BE7E /* TabBarController.swift */; };
+		97F1F83C2A03827F0081BE7E /* ChangeSizeFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F83B2A03827E0081BE7E /* ChangeSizeFontViewController.swift */; };
+		97F1F83F2A0388810081BE7E /* OtherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F83E2A0388810081BE7E /* OtherSettingsViewController.swift */; };
+		97F1F8412A038A350081BE7E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8402A038A350081BE7E /* Colors.swift */; };
+		97F1F8452A038C380081BE7E /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8442A038C380081BE7E /* CustomLabel.swift */; };
+		97F1F8472A038CBE0081BE7E /* TextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8462A038CBE0081BE7E /* TextProvider.swift */; };
+		97F1F8492A038E860081BE7E /* CastoroTitling-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8482A038E860081BE7E /* CastoroTitling-Regular.ttf */; };
+		97F1F84D2A038F530081BE7E /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F84C2A038F530081BE7E /* Views.swift */; };
+		97F1F8592A03ECBD0081BE7E /* Caveat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F84E2A03ECBC0081BE7E /* Caveat-VariableFont_wght.ttf */; };
+		97F1F85B2A03ECBD0081BE7E /* Genos-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8502A03ECBD0081BE7E /* Genos-Italic-VariableFont_wght.ttf */; };
+		97F1F85C2A03ECBD0081BE7E /* Sacramento-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8512A03ECBD0081BE7E /* Sacramento-Regular.ttf */; };
+		97F1F85D2A03ECBD0081BE7E /* GreatVibes-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8522A03ECBD0081BE7E /* GreatVibes-Regular.ttf */; };
+		97F1F85F2A03ECBD0081BE7E /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8542A03ECBD0081BE7E /* DancingScript-VariableFont_wght.ttf */; };
+		97F1F8612A03ECBD0081BE7E /* BrunoAceSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8562A03ECBD0081BE7E /* BrunoAceSC-Regular.ttf */; };
+		97F1F8622A03ECBD0081BE7E /* Zeyada-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8572A03ECBD0081BE7E /* Zeyada-Regular.ttf */; };
+		97F1F8632A03ECBD0081BE7E /* Gruppo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97F1F8582A03ECBD0081BE7E /* Gruppo-Regular.ttf */; };
+		97F1F8652A041FE00081BE7E /* LabelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1F8642A041FE00081BE7E /* LabelSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9729336129F1398500D75589 /* HomeWorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9729336429F1398500D75589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9729336629F1398500D75589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9729336829F1398500D75589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9729336B29F1398500D75589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9729336D29F1398700D75589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9729337029F1398700D75589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9729337229F1398700D75589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F1F8392A0381F30081BE7E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		97F1F83B2A03827E0081BE7E /* ChangeSizeFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSizeFontViewController.swift; sourceTree = "<group>"; };
+		97F1F83E2A0388810081BE7E /* OtherSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSettingsViewController.swift; sourceTree = "<group>"; };
+		97F1F8402A038A350081BE7E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		97F1F8442A038C380081BE7E /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		97F1F8462A038CBE0081BE7E /* TextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProvider.swift; sourceTree = "<group>"; };
+		97F1F8482A038E860081BE7E /* CastoroTitling-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CastoroTitling-Regular.ttf"; sourceTree = "<group>"; };
+		97F1F84C2A038F530081BE7E /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		97F1F84E2A03ECBC0081BE7E /* Caveat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		97F1F8502A03ECBD0081BE7E /* Genos-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Genos-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		97F1F8512A03ECBD0081BE7E /* Sacramento-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sacramento-Regular.ttf"; sourceTree = "<group>"; };
+		97F1F8522A03ECBD0081BE7E /* GreatVibes-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.ttf"; sourceTree = "<group>"; };
+		97F1F8542A03ECBD0081BE7E /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		97F1F8562A03ECBD0081BE7E /* BrunoAceSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrunoAceSC-Regular.ttf"; sourceTree = "<group>"; };
+		97F1F8572A03ECBD0081BE7E /* Zeyada-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zeyada-Regular.ttf"; sourceTree = "<group>"; };
+		97F1F8582A03ECBD0081BE7E /* Gruppo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gruppo-Regular.ttf"; sourceTree = "<group>"; };
+		97F1F8642A041FE00081BE7E /* LabelSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +88,68 @@
 			children = (
 				9729336429F1398500D75589 /* AppDelegate.swift */,
 				9729336629F1398500D75589 /* SceneDelegate.swift */,
-				9729336829F1398500D75589 /* ViewController.swift */,
-				9729336A29F1398500D75589 /* Main.storyboard */,
+				97F1F83D2A0388470081BE7E /* Controllers */,
+				97F1F8422A038BED0081BE7E /* Custom Views */,
+				97F1F84A2A038E8E0081BE7E /* Fonts */,
+				97F1F8432A038C0B0081BE7E /* Resources */,
 				9729336D29F1398700D75589 /* Assets.xcassets */,
 				9729336F29F1398700D75589 /* LaunchScreen.storyboard */,
 				9729337229F1398700D75589 /* Info.plist */,
 			);
 			path = HomeWorks;
+			sourceTree = "<group>";
+		};
+		97F1F83D2A0388470081BE7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8392A0381F30081BE7E /* TabBarController.swift */,
+				97F1F83B2A03827E0081BE7E /* ChangeSizeFontViewController.swift */,
+				97F1F83E2A0388810081BE7E /* OtherSettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97F1F8422A038BED0081BE7E /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8442A038C380081BE7E /* CustomLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		97F1F8432A038C0B0081BE7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8462A038CBE0081BE7E /* TextProvider.swift */,
+				97F1F8642A041FE00081BE7E /* LabelSettings.swift */,
+				97F1F84B2A038F2A0081BE7E /* Extensions */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97F1F84A2A038E8E0081BE7E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8512A03ECBD0081BE7E /* Sacramento-Regular.ttf */,
+				97F1F8572A03ECBD0081BE7E /* Zeyada-Regular.ttf */,
+				97F1F8582A03ECBD0081BE7E /* Gruppo-Regular.ttf */,
+				97F1F8522A03ECBD0081BE7E /* GreatVibes-Regular.ttf */,
+				97F1F8482A038E860081BE7E /* CastoroTitling-Regular.ttf */,
+				97F1F8562A03ECBD0081BE7E /* BrunoAceSC-Regular.ttf */,
+				97F1F84E2A03ECBC0081BE7E /* Caveat-VariableFont_wght.ttf */,
+				97F1F8542A03ECBD0081BE7E /* DancingScript-VariableFont_wght.ttf */,
+				97F1F8502A03ECBD0081BE7E /* Genos-Italic-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		97F1F84B2A038F2A0081BE7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97F1F8402A038A350081BE7E /* Colors.swift */,
+				97F1F84C2A038F530081BE7E /* Views.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +210,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F1F8622A03ECBD0081BE7E /* Zeyada-Regular.ttf in Resources */,
+				97F1F85B2A03ECBD0081BE7E /* Genos-Italic-VariableFont_wght.ttf in Resources */,
+				97F1F8492A038E860081BE7E /* CastoroTitling-Regular.ttf in Resources */,
+				97F1F85C2A03ECBD0081BE7E /* Sacramento-Regular.ttf in Resources */,
+				97F1F85F2A03ECBD0081BE7E /* DancingScript-VariableFont_wght.ttf in Resources */,
 				9729337129F1398700D75589 /* LaunchScreen.storyboard in Resources */,
+				97F1F8612A03ECBD0081BE7E /* BrunoAceSC-Regular.ttf in Resources */,
 				9729336E29F1398700D75589 /* Assets.xcassets in Resources */,
-				9729336C29F1398500D75589 /* Main.storyboard in Resources */,
+				97F1F85D2A03ECBD0081BE7E /* GreatVibes-Regular.ttf in Resources */,
+				97F1F8632A03ECBD0081BE7E /* Gruppo-Regular.ttf in Resources */,
+				97F1F8592A03ECBD0081BE7E /* Caveat-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +231,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9729336929F1398500D75589 /* ViewController.swift in Sources */,
+				97F1F83A2A0381F30081BE7E /* TabBarController.swift in Sources */,
+				97F1F8412A038A350081BE7E /* Colors.swift in Sources */,
 				9729336529F1398500D75589 /* AppDelegate.swift in Sources */,
+				97F1F8652A041FE00081BE7E /* LabelSettings.swift in Sources */,
+				97F1F8452A038C380081BE7E /* CustomLabel.swift in Sources */,
+				97F1F83F2A0388810081BE7E /* OtherSettingsViewController.swift in Sources */,
+				97F1F8472A038CBE0081BE7E /* TextProvider.swift in Sources */,
 				9729336729F1398500D75589 /* SceneDelegate.swift in Sources */,
+				97F1F83C2A03827F0081BE7E /* ChangeSizeFontViewController.swift in Sources */,
+				97F1F84D2A038F530081BE7E /* Views.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9729336A29F1398500D75589 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9729336B29F1398500D75589 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9729336F29F1398700D75589 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +384,6 @@
 				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +411,6 @@
 				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
